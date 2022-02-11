@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: python-api
+  name: python-api
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: python-api
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: python-api
+    spec:
+      containers:
+      - image: docker.io/martinezgerman/restapi
+        name: python-api
+        imagePullPolicy: Always
+        resources: {}
+        ports:
+          - containerPort: 5002
+status: {}
