@@ -11,7 +11,7 @@ Steps to run the local server:
 ```bash
 $ docker-compose up
 ```
-After application start you can access the OpenApi documentation at [http:://localhost:5002/docs](http://localhost:5002/docs)
+After application start you can access the OpenApi documentation at [http:://localhost/docs](http://localhost/docs)
 
 # Run Local Development Server
 
