@@ -20,6 +20,7 @@ You need to create a virtualenv and install the dependencies with pip:
 $ python3 -m venv $PWD/myvenv
 $ source myvenv/bin/activate
 $ pip install -r requirements.txt
+$ export PYTHONPATH=$PWD/src
 ```
 
 For test your development you can run the application in debug mode like this:
